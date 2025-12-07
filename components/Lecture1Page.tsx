@@ -41,8 +41,8 @@ const CodeBlock = ({
                     <button
                         onClick={() => setShowExplanation(!showExplanation)}
                         className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all font-bold ${showExplanation
-                                ? 'bg-blue-600/20 text-blue-400 hover:bg-blue-600/30'
-                                : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+                            ? 'bg-blue-600/20 text-blue-400 hover:bg-blue-600/30'
+                            : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
                             }`}
                     >
                         {showExplanation ? <X size={14} /> : <Info size={14} />}
@@ -222,8 +222,8 @@ const MemoryLab = () => {
                                             key={t}
                                             onClick={() => setDataType(t as any)}
                                             className={`py-2 px-3 rounded-lg text-xs md:text-sm font-bold border transition-all ${dataType === t
-                                                    ? 'bg-purple-600 border-purple-500 text-white shadow-lg shadow-purple-900/20'
-                                                    : 'bg-slate-900 border-slate-700 text-slate-400 hover:bg-slate-800'
+                                                ? 'bg-purple-600 border-purple-500 text-white shadow-lg shadow-purple-900/20'
+                                                : 'bg-slate-900 border-slate-700 text-slate-400 hover:bg-slate-800'
                                                 }`}
                                         >
                                             {t} <span className="opacity-60 block text-[10px] md:inline md:text-xs md:ml-1">({typeSize[t as keyof typeof typeSize]}B)</span>
@@ -281,8 +281,8 @@ const MemoryLab = () => {
                             onMouseEnter={() => setHoverIdx(i)}
                             onMouseLeave={() => setHoverIdx(null)}
                             className={`w-24 md:w-32 h-32 border-r border-slate-700/50 flex flex-col items-center justify-between p-3 cursor-pointer transition-all duration-200 ${hoverIdx === i
-                                    ? 'bg-purple-900/20 shadow-[inset_0_0_20px_rgba(168,85,247,0.1)] scale-105 z-10 border-slate-600 rounded-lg'
-                                    : 'bg-slate-800/30 hover:bg-slate-800/60'
+                                ? 'bg-purple-900/20 shadow-[inset_0_0_20px_rgba(168,85,247,0.1)] scale-105 z-10 border-slate-600 rounded-lg'
+                                : 'bg-slate-800/30 hover:bg-slate-800/60'
                                 } first:rounded-l-lg last:rounded-r-lg`}
                         >
                             <div className="w-full flex justify-between items-center text-[10px] text-slate-500 font-mono">
@@ -377,10 +377,10 @@ const TraversalVisualizer = () => {
                             <div className="flex gap-2 h-20">
                                 {arr.map((val, i) => (
                                     <div key={i} className={`flex-1 rounded-lg border-2 flex flex-col items-center justify-center font-bold text-lg transition-all duration-500 relative ${i === currentIdx
-                                            ? 'bg-green-600 border-green-400 text-white -translate-y-2 shadow-[0_10px_20px_-5px_rgba(22,163,74,0.5)] z-10'
-                                            : i < currentIdx
-                                                ? 'bg-slate-800/50 border-green-900/30 text-slate-500'
-                                                : 'bg-slate-800/80 border-slate-700 text-slate-400'
+                                        ? 'bg-green-600 border-green-400 text-white -translate-y-2 shadow-[0_10px_20px_-5px_rgba(22,163,74,0.5)] z-10'
+                                        : i < currentIdx
+                                            ? 'bg-slate-800/50 border-green-900/30 text-slate-500'
+                                            : 'bg-slate-800/80 border-slate-700 text-slate-400'
                                         }`}>
                                         {i === currentIdx && (
                                             <div className="absolute -top-8 text-xs font-bold text-green-400 animate-bounce">
@@ -436,7 +436,7 @@ const Lecture1Page = () => {
             <header className="fixed top-0 left-0 right-0 h-16 bg-[#020617]/80 backdrop-blur-md border-b border-slate-800 z-50 flex items-center justify-between px-6 md:px-12 transition-all">
                 <div className="flex items-center gap-4">
                     <div className="w-10 h-10 flex items-center justify-center">
-                        <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                        <img src="/UNIT4L1/logo.png" alt="Logo" className="w-full h-full object-contain" />
                     </div>
                     <div className="flex flex-col">
                         <h1 className="font-bold text-white text-sm md:text-base leading-tight">Introduction to Arrays</h1>
